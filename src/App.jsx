@@ -1,35 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from "./styles/GlobalStyles";
+import StopWatch from "./components/StopWatch";
+import "./styles/App.css";
+
+const theme = {
+	color: {
+		heading: "var(--primary)",
+		elements: "var(--tertiary)",
+		text: "var(--secondary)",
+	},
+};
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+	return (
+		<ThemeProvider theme={theme}>
+			<GlobalStyle />
+			<div className="app">
+				<StopWatch />
+			</div>
+		</ThemeProvider>
+	);
 }
 
-export default App
+export default App;
