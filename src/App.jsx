@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./styles/GlobalStyles";
-import StopWatch from "./components/StopWatch";
+import StopWatch from "./pages/StopWatch";
+import Timer from "./pages/Timer";
 import "./styles/App.css";
 
 const theme = {
@@ -16,7 +17,8 @@ function App() {
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
 			<div className="app">
-				<StopWatch />
+				{/* <StopWatch /> */}
+				<Timer />
 			</div>
 		</ThemeProvider>
 	);
