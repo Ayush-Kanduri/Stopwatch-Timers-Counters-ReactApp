@@ -79,13 +79,14 @@ const StopWatch = () => {
 	};
 
 	return (
-		<StyledTimer>
-			<Heading>StopWatch</Heading>
+		<StyledTimer className="scroll">
+			<Heading>Stop&nbsp;Watch</Heading>
 			<div style={styles.div}>
 				<h1
 					style={{
 						letterSpacing: "0.15rem",
 						color: "var(--secondary)",
+						fontSize: "4rem",
 					}}
 				>
 					{timer.hh < 10 ? `0${timer.hh}` : `${timer.hh}`}:
@@ -142,16 +143,19 @@ const StyledButton2 = styled(Button)`
 	border-color: ${({ disabled }) => disabled && "gray"} !important;
 `;
 const Heading = styled.h1`
-	font-size: 3rem;
-	color: ${({ theme }) => theme.color.text};
+	font-size: 4rem;
+	color: #ffb7ff;
 	text-align: center;
 `;
 const StyledTimer = styled.div`
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 4rem;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
 `;
 
 export default StopWatch;

@@ -17,7 +17,7 @@ const ClicksCounter = () => {
 		setCount((prev) => prev + 1);
 	};
 	return (
-		<Container onClick={increaseCount}>
+		<Container onClick={increaseCount} className="scroll">
 			<Stack direction="column" spacing={5}>
 				<Heading>Clicked {count} times!</Heading>
 				<StyledButton2
@@ -38,8 +38,8 @@ export default ClicksCounter;
 
 const Container = styled.div`
 	width: 100%;
-	height: 100%;
-	border: 5px solid gree;
+	height: 100vh;
+	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -312,7 +312,7 @@ const Timer = () => {
 	};
 
 	return (
-		<>
+		<Container className="scroll">
 			<AnimatePresence>
 				{alert.status && (
 					<AlertComponent
@@ -366,7 +366,7 @@ const Timer = () => {
 					<ButtonTwo reset={resetTimer} active={active} input={input} />
 				</Stack>
 			</Stack>
-		</>
+		</Container>
 	);
 };
 
@@ -376,4 +376,15 @@ const Heading = styled.h1`
 	font-size: 3rem;
 	color: ${({ theme }) => theme.color.text};
 	text-align: center;
+`;
+
+const Container = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
 `;

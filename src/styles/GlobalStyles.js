@@ -10,7 +10,6 @@ const GlobalStyle = createGlobalStyle`
         user-select: none;
         -webkit-user-drag: none;
         scroll-behavior: smooth;
-        overflow: hidden;
         overflow-wrap: break-word;
         font-family: "Montserrat", sans-serif;
         font-family: "Open Sans", sans-serif;
@@ -22,6 +21,13 @@ const GlobalStyle = createGlobalStyle`
     }
     h1{
         color: ${({ theme }) => theme.color.heading}
+    }
+    html{
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory; 
+    }
+    .scroll{
+        scroll-snap-align: start;
     }
 `;
 

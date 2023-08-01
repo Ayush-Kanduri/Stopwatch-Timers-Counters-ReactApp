@@ -7,7 +7,7 @@ const AlertComponent = ({ setAlert, severity, message }) => {
 	return (
 		<AlertMotion
 			key="alert"
-			initial={{ x: 500, opacity: 0, scale: 0.2 }}
+			initial={{ x: 550, opacity: 0, scale: 0.2 }}
 			animate={{
 				x: 0,
 				opacity: 1,
@@ -15,7 +15,7 @@ const AlertComponent = ({ setAlert, severity, message }) => {
 				transition: { type: "spring", stiffness: 200 },
 			}}
 			exit={{
-				x: 500,
+				x: 550,
 				opacity: 0,
 				scale: 0.2,
 				transition: { type: "tween", stiffness: 100 },
@@ -35,7 +35,7 @@ export default AlertComponent;
 
 const AlertMotion = styled(motion.div)`
 	position: absolute;
-	top: 4%;
+	top: 5%;
 	left: 0;
 	right: 0;
 	width: 50%;

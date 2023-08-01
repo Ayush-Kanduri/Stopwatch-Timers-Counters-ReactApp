@@ -1,9 +1,13 @@
 .app {
 	background-color: #242424;
-	width: 100vw;
-	height: 100vh;
+	/* width: 100vw; */
+	/* height: 100vh; */
 	min-height: 100vh;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	/* overflow: hidden; */
+	/* scroll-behavior: smooth;
+	scroll-snap-type: y mandatory; */
 }
