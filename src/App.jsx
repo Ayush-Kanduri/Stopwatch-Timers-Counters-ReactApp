@@ -2,6 +2,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./styles/GlobalStyles";
 import StopWatch from "./pages/StopWatch";
 import Timer from "./pages/Timer";
+import ClicksCounter from "./pages/ClicksCounter";
 import "./styles/App.css";
 
 const theme = {
@@ -18,7 +19,8 @@ function App() {
 			<GlobalStyle />
 			<div className="app">
 				{/* <StopWatch /> */}
-				<Timer />
+				{/* <Timer /> */}
+				<ClicksCounter />
 			</div>
 		</ThemeProvider>
 	);
