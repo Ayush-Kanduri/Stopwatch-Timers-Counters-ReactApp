@@ -1,4 +1,4 @@
-# Stopwatch, Timers & Counters 🚀
+# 𝐒𝐭𝐨𝐩𝐰𝐚𝐭𝐜𝐡, 𝐓𝐢𝐦𝐞𝐫𝐬 & 𝐂𝐨𝐮𝐧𝐭𝐞𝐫𝐬 🚀
 
 <br/>
 <p align="center">
@@ -151,7 +151,7 @@ Now open http://localhost:4173 in your browser to view the Live Website.
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <img width="2000" src="https://skillicons.dev/icons?i=vite,react,materialui,css,styledcomponents,js,nodejs,vscode,github,emotion,babel&theme=dark&perline=10" />
+    <img width="2000" src="https://skillicons.dev/icons?i=vite,react,materialui,css,styledcomponents,js,nodejs,vscode,github,emotion,babel&theme=dark&perline=11" />
   </a>
 </p>
 
@@ -187,9 +187,7 @@ Now open http://localhost:4173 in your browser to view the Live Website.
 
 ### **_Checkout the Live Website:_** [Stopwatch, Timers & Counters](https://ayush-kanduri.github.io/Stopwatch-Timers-Counters-ReactApp/)
 
-<br />
-
-### **_Checkout the Demo Video:_** [Video](https://youtu.be/RfRVNT5jMho)
+### **_Checkout the Demo Video:_** [YouTube](https://youtu.be/RfRVNT5jMho)
 
 <br />
 
