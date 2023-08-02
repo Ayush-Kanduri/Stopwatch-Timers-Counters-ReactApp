@@ -11,3 +11,15 @@
 	/* scroll-behavior: smooth;
 	scroll-snap-type: y mandatory; */
 }
+
+.app::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #fff;
+	background-image: -webkit-linear-gradient(
+		top,
+		#e4f5fc 0%,
+		#bfe8f9 50%,
+		#9fd8ef 51%,
+		#2ab0ed 100%
+	);
+}

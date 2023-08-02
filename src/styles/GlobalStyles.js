@@ -24,8 +24,12 @@ const GlobalStyle = createGlobalStyle`
     }
     html{
         scroll-behavior: smooth;
-        scroll-snap-type: y mandatory; 
+        scroll-snap-type: y mandatory;
+        overflow-x: hidden;
+        overflow-y: scroll; 
     }
+    ::-webkit-scrollbar { display: none; } 
+    ::-webkit-scrollbar-thumb { display: none; }
     .scroll{
         scroll-snap-align: start;
     }
