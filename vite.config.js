@@ -14,4 +14,8 @@ export default defineConfig({
 		open: true,
 		port: 8000,
 	},
+	build: {
+		outDir: "build",
+	},
+	base: "/Stopwatch-Timers-Counters-ReactApp/",
 });
