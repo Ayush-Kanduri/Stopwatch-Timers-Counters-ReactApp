@@ -75,7 +75,7 @@ Run this command to install _node_ devDependency.
 npm install @types/node
 ```
 
-If _jsconfig.js_ doesn't exist, then create it at the root with the following configuration.
+If _jsconfig.json_ doesn't exist, then create it at the root with the following configuration.
 
 ```js
 {
